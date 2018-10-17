@@ -22,8 +22,8 @@ from absl import flags
 
 import tensorflow as tf
 
-from object_detection import model_hparams
-from object_detection import model_lib
+from models.research.object_detection import model_hparams
+from models.research.object_detection import model_lib
 
 flags.DEFINE_string(
     'model_dir', None, 'Path to output model directory '
@@ -60,6 +60,8 @@ def main(unused_argv):
       pipeline_config_path=FLAGS.pipeline_config_path,
       train_steps=FLAGS.num_train_steps,
       eval_steps=FLAGS.num_eval_steps)
+
+
   estimator = train_and_eval_dict['estimator']
   train_input_fn = train_and_eval_dict['train_input_fn']
   eval_input_fn = train_and_eval_dict['eval_input_fn']

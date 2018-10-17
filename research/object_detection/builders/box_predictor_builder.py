@@ -15,13 +15,13 @@
 
 """Function to build box predictor from configuration."""
 
-from object_detection.predictors import convolutional_box_predictor
-from object_detection.predictors import mask_rcnn_box_predictor
-from object_detection.predictors import rfcn_box_predictor
-from object_detection.predictors.heads import box_head
-from object_detection.predictors.heads import class_head
-from object_detection.predictors.heads import mask_head
-from object_detection.protos import box_predictor_pb2
+from models.research.object_detection.predictors import convolutional_box_predictor
+from models.research.object_detection.predictors import mask_rcnn_box_predictor
+from models.research.object_detection.predictors import rfcn_box_predictor
+from models.research.object_detection.predictors.heads import box_head
+from models.research.object_detection.predictors.heads import class_head
+from models.research.object_detection.predictors.heads import mask_head
+from models.research.object_detection.protos import box_predictor_pb2
 
 
 def build_convolutional_box_predictor(

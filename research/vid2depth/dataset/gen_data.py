@@ -17,7 +17,7 @@
 
 # Example usage:
 #
-# python dataset/gen_data.py \
+# python dataset/gen_data_phase_1.py \
 #   --alsologtostderr \
 #   --dataset_name kitti_raw_eigen \
 #   --dataset_dir ~/vid2depth/dataset/kitti-raw-uncompressed \

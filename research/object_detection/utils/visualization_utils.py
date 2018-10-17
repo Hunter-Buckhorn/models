@@ -32,7 +32,7 @@ import PIL.ImageFont as ImageFont
 import six
 import tensorflow as tf
 
-from object_detection.core import standard_fields as fields
+from models.research.object_detection.core import standard_fields as fields
 
 
 _TITLE_LEFT_MARGIN = 10
@@ -607,6 +607,7 @@ def visualize_boxes_and_labels_on_image_array(
   for i in range(min(max_boxes_to_draw, boxes.shape[0])):
     if scores is None or scores[i] > min_score_thresh:
       box = tuple(boxes[i].tolist())
+      print("utils box: {}".format(box))
       if instance_masks is not None:
         box_to_instance_masks_map[box] = instance_masks[i]
       if instance_boundaries is not None:

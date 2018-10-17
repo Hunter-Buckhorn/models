@@ -15,8 +15,8 @@
 
 """Convolutional Box Predictors with and without weight sharing."""
 import tensorflow as tf
-from object_detection.core import box_predictor
-from object_detection.utils import static_shape
+from models.research.object_detection.core import box_predictor
+from models.research.object_detection.utils import static_shape
 
 slim = tf.contrib.slim
 

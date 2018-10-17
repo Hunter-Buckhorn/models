@@ -13,7 +13,7 @@
 # limitations under the License.
 # ==============================================================================
 
-"""Reads data that is produced by dataset/gen_data.py."""
+"""Reads data that is produced by dataset/gen_data_phase_1.py."""
 
 from __future__ import absolute_import
 from __future__ import division
@@ -32,7 +32,7 @@ QUEUE_BUFFER = 3
 
 
 class DataReader(object):
-  """Reads stored sequences which are produced by dataset/gen_data.py."""
+  """Reads stored sequences which are produced by dataset/gen_data_phase_1.py."""
 
   def __init__(self, data_dir, batch_size, img_height, img_width, seq_length,
                num_scales):

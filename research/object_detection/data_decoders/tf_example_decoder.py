@@ -22,10 +22,10 @@ import tensorflow as tf
 from tensorflow.python.ops import array_ops
 from tensorflow.python.ops import control_flow_ops
 from tensorflow.python.ops import math_ops
-from object_detection.core import data_decoder
-from object_detection.core import standard_fields as fields
-from object_detection.protos import input_reader_pb2
-from object_detection.utils import label_map_util
+from models.research.object_detection.core import data_decoder
+from models.research.object_detection.core import standard_fields as fields
+from models.research.object_detection.protos import input_reader_pb2
+from models.research.object_detection.utils import label_map_util
 
 slim_example_decoder = tf.contrib.slim.tfexample_decoder
 
