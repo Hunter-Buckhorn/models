@@ -129,7 +129,7 @@ class BaseTest(tf.test.TestCase):
             "--eval_count", "8",
         ],
         synth=False, max_train=None)
-    self.assertTrue(tf.gfile.Exists(os.path.join(model_dir, "checkpoint")))
+    self.assertTrue(tf.gfile.Exists(os.path.join(model_dir, "checkpoint_old")))
 
   def test_end_to_end_with_export(self):
     """Tests end-to-end running."""
